@@ -1,0 +1,1 @@
+Site desenvolvido como forma de treinamento de HTML e CSS.
