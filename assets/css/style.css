@@ -1,0 +1,423 @@
+@font-face {
+    font-family: Azonix;
+    src: url('./assets/fonts/Azonix.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.background-black {
+    background: rgb(23, 22, 22);
+    background: linear-gradient(90deg, rgba(23, 22, 22, 1) 0%, rgba(0, 0, 0, 1) 43%, rgba(0, 0, 0, 1) 100%);
+}
+
+.center {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    width: 20%;
+}
+
+.logo-text {
+    width: auto;
+    text-align: center;
+}
+
+.logo-text h2 {
+    font-family: Azonix;
+    font-size: 25px;
+}
+
+.logo-img {
+    width: 20%;
+    background-image: url("../img/diamond_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    width: 80%;
+    text-align: end;
+    margin: auto 0;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #E9BD4C;
+}
+
+.folha-rosto {
+    height: 100vh;
+}
+
+.folha-rosto div {
+    height: 100%;
+}
+
+.folha-rosto-text, .folha-rosto-img {
+    height: 100%;
+    width: 50%;
+}
+
+.folha-rosto-img {
+    width: 40%;
+}
+
+.folha-rosto-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.folha-rosto-text h2 {
+    color: #E9BD4C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+    padding-bottom: 20px;
+}
+
+.folha-rosto-text p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.folha-rosto-img {
+    background-image: url('../img/Background_intro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+/* sobre-nos */
+
+.sobre-nos {
+    background-color: #EBEBEB;
+    padding: 100px 0;
+}
+
+.center {
+    flex-direction: column;
+}
+
+.chamada-sobre {
+    margin: 0 auto;
+}
+
+.conteudo-sobre {
+    display: flex;
+}
+
+.chamada-sobre h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo-sobre p {
+    width: 47%;
+    margin: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.center {
+    flex-direction: row;
+}
+
+/* conquistas */
+
+.conquistas {
+    padding: 200px 0;
+    background-color: #FBFBFB;
+}
+.conquistas h2{
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.painel-conquistas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.painel-conquistas div {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.painel-conquistas div p {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+/* produtos */
+
+.produtos {
+    background-color: #F6F6F6;
+}
+
+.conteudo-produtos {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    /* flex-wrap: wrap; */
+    /* height: 800px; */
+}
+
+.produtos-ilustracao {
+    width: 35%;
+    margin-top: 20px;
+    background-image: url("../img/businessman.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.produtos-sobre {
+    /* padding: 80px 0; */
+    /* margin-left: 10%; */
+    margin: 5% 0;
+}
+
+.produtos-sobre h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos-sobre p {
+    padding: 30px 0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.produtos-sobre button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 20px;
+    border-radius: 20px 0 20px 0;
+    border: 0;
+    color: white;
+    background: #0F94C0;
+    cursor: pointer;
+}
+
+.produtos-sobre button:hover {
+    background-color: #189eca;
+}
+
+/* contato */
+
+#input-form label, #input-form input {
+    display: block;
+    margin-bottom: 10px;
+    /* width: 800px; */
+}
+
+#input-form input {
+    width: 100%;
+    height: 40px;
+}
+
+#input-form label {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wraper-contato {
+    width: 40%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#input-form button {
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 20px;
+    width: 50%;
+    border: 0;
+    color: white;
+    background: #0F94C0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* footer */
+
+.footer-wraper {
+    padding: 50px 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-wraper>div {
+    margin-right: 8%;
+    width: auto;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.footer-wraper>div p {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.logo-text-footer {
+    color: white;
+    width: auto;
+    text-align: center;
+}
+
+.logo-text-footer h2 {
+    font-size: 15px;
+    font-family: Azonix;
+}
+
+.social-media img {
+    margin: 10px 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.suporte h2, .sobre-nos-footer h2, .mantenedores-footer h2 {
+    color: #9F9393;
+}
+
+.newsletter-wraper {
+    width: 100%;
+}
+
+.newsletter-wraper p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-input input {
+    height: 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+.newsletter-input {
+    margin: 0 10px;
+}
+
+.newsletter-img img {
+    height: 30px;
+}
+
+.newsletter-button button {
+    height: 25px;
+    border: 0;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.wraper-contato h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-mobile {
+        display: block;
+        justify-content: space-between;
+    }
+    .menu a {
+        display: none;
+    }
+    .folha-rosto-img {
+        display: none;
+    }
+    .folha-rosto-text {
+        width: 100%;
+        text-align: center;
+    }
+    .conteudo-sobre {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .conteudo-sobre p {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .chamada-sobre h2 {
+        text-align: center;
+    }
+    .painel-conquistas{
+        flex-direction: column;
+    }
+    .painel-conquistas div {
+        padding: 20px 0;
+        
+    }
+    .conquistas {
+        padding: 100px 0;
+    }
+    .produtos-ilustracao{
+        display: none;
+    }
+    .produtos-sobre{
+        text-align: center;
+    }
+    .footer-wraper {
+        flex-direction: column;
+    }
+    .footer-wraper>div {
+        /* margin: 0 auto; */
+        width: auto;
+        text-align: start;
+        padding-bottom: 15px;
+    }
+}
